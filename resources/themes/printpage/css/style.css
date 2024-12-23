@@ -1,0 +1,239 @@
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+  color: #5D6975;
+  text-decoration: underline;
+}
+
+body {
+  position: relative;
+  width: 21cm;  
+  height: 10cm; 
+  margin: 0 auto; 
+  color: #001028;
+  margin-top: 50px;
+  background: #FFFFFF; 
+  font-family: Arial, sans-serif; 
+  font-size: 11px; 
+  font-family: Arial;
+}
+
+header {
+  padding: 10px 0;
+  margin-bottom: 1px;
+   border-top: 2px solid  #000000;
+  border-left: 2px solid  #000000;
+border-right: 2px solid  #000000;
+border-bottom: 2px solid  #000000;
+
+
+}
+
+#logo {
+  float:left;
+  margin-bottom: 10px;
+  
+}
+#banner {
+  
+  margin-bottom: 10px;
+  
+}
+#banner img {
+  height: 70px;
+  
+}
+#logo img {
+  height: 70px;
+  margin-left:20px;
+}
+h2 {
+  
+  color: #FF00B4;
+  font-size: 2em;
+  line-height: 0em;
+  font-weight:800;
+  text-align: center;
+  margin: 10px 0 5px 0;
+  
+ 
+  
+}
+h1 {
+  border-top: 1px solid  #000000;
+  border-bottom: 1px solid  #000000;
+  color: #5D6975;
+  font-size: 1.5em;
+  line-height: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  margin: 0 0 5px 0;
+
+}
+h3
+ {
+  
+  color: #3060D4;
+  font-size: 1.5em;
+  line-height: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  margin: 12px 0 1px 0;
+
+}
+h4 {
+ 
+  color: #3060D4;
+  font-size: 1.5em;
+  line-height: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  margin: 0 0 1px 0;
+
+}
+
+#project {
+  float: left;
+ font-size: 13px;
+  
+  
+}
+
+#project span {
+margin-left:10px;
+  color: #ff0080;
+  text-align: right;
+  width: 52px;
+  margin-right: 10px;
+  display: initial;
+  font-size: 12px;
+}
+#company span {
+  color: #ff0080;
+  text-align: right;
+  width: 52px;
+  margin-right: 10px;
+  display: initial;
+  font-size: 12px;
+}
+#company1 span {
+  color: #ff0080;
+  text-align: right;
+  width: 52px;
+  margin-right: 10px;
+  display: initial;
+  font-size: 12px;
+}
+
+
+#company {
+	
+  float: right;
+  text-align: right;
+margin-right: 10px;
+font-size: 14px;
+  
+}
+
+#project div,
+#company div {
+  white-space: normal;        
+}
+#company1 {
+	
+  float: right;
+  text-align: right;
+margin-right: 5px;
+font-size: 13px;
+  
+}
+
+#project div,
+#company1 div {
+  white-space: normal;        
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 20px;
+}
+
+table tr:nth-child(2n-1) td {
+  background: #FFFFFF;
+}
+
+table th,
+table td {
+  text-align: center;
+   border-top: 1px solid  #5D6975;
+  border-bottom: 1px solid  #5D6975;
+  font-size: 15px;
+  
+}
+
+table th {
+  padding: 5px 20px;
+  color: #000000;
+  border-bottom: 1px solid #C1CED9;
+  white-space: nowrap;        
+  font-weight: normal;
+}
+
+table .service
+ {
+  text-align: center;
+}
+table .desc
+ {
+  text-align: left;
+}table .deschead
+ {
+  text-align: center;
+}
+
+table td {
+  padding: 1px;
+  text-align: right;
+  border-left: 1px solid #666666;
+}
+
+table td.service,
+table td.desc {
+  vertical-align: top;
+}
+
+table td.unit,
+table td.qty,
+table td.total {
+  font-size: 1.2em;
+}
+
+table td.grand {
+  border-top: 1px solid #5D6975;;
+}
+
+#notices .notice {
+  color: #5D6975;
+  font-size: 1.2em;
+}
+tbody {
+    
+    height: 10%;
+    width: 100%;
+    overflow: auto;
+}
+footer {
+  color: #5D6975;
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid #C1CED9;
+  padding: 8px 0;
+  text-align: center;
+}

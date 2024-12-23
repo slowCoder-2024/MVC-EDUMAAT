@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+     
+    <bean id="studentExcelFormat" class="in.jdsoft.educationmanagement.school.components.StudentExcelDownloadFormat" />
+    <bean id="studentDetails" class="in.jdsoft.educationmanagement.school.components.StudentExcelWithData"></bean>
+    <bean id="studentMarkWithDetails" class="in.jdsoft.educationmanagement.school.components.StudentMarkExcelWithData"></bean>
+    <bean id="studentAdmissionDetails" class="in.jdsoft.educationmanagement.school.components.StudentAdmissionExcelWithData"></bean>
+     <bean id="staffAttendanceDetails" class="in.jdsoft.educationmanagement.school.components.StaffAttendanceExcelDownloadFormat"></bean>
+      <bean id="studentDayAttendanceDetails" class="in.jdsoft.educationmanagement.school.components.StudentDayAttendanceExcelDownloadFormat"></bean>
+</beans>

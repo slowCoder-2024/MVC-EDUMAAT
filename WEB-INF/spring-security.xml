@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:security="http://www.springframework.org/schema/security"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
+		http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.2.xsd">
+
+ <context:component-scan base-package="in.jdsoft.educationmanagement.school.authenticationService"/>
+ 
+ <bean id="webexpressionHandler" class="org.springframework.security.web.access.expression.DefaultWebSecurityExpressionHandler" />
+ 
+  <security:http auto-config='true'>
+  <security:access-denied-handler error-page="/403" />
+      <security:form-login 
+            login-page="/"
+            authentication-failure-url="/loginpage?error"
+      		authentication-success-handler-ref="customAuthenticationSuccessHandler"
+      		default-target-url="/home"
+      		login-processing-url="/do_login"
+			username-parameter="username"
+			password-parameter="password"/>
+	 <security:logout logout-success-url="/loginpage?logout"  logout-url="/do_logout"/>
+ </security:http>
+   
+   
+       
+  <security:authentication-manager>
+      <security:authentication-provider ref="customAuthenticationProvider"/>
+    </security:authentication-manager>   
+
+</beans>
